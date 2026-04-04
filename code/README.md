@@ -7,9 +7,13 @@ These scripts align with the numbered chapters in [the book README](../README.md
 ```bash
 cd code
 python -m venv .venv
-.venv\Scripts\activate
+# Windows: .venv\Scripts\activate
+# macOS / Linux: source .venv/bin/activate
 pip install -r requirements.txt
+# Windows:
 copy .env.example .env
+# macOS / Linux:
+# cp .env.example .env
 ```
 
 Edit `.env` and set your key:
