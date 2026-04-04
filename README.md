@@ -1,8 +1,16 @@
 # What an agent actually is
 
-Short chapters that build from **LLM basics** to **production-minded agents**: the agent loop, tools, retrieval, memory, planning, multi-agent coordination, and hardening (security, evaluation, cost, observability).
+**What this is.** A sequence of short chapters that move from **how LLMs behave in practice** to **how you harden agent-shaped systems** in something like production: the **agent loop**, **tools**, **retrieval (RAG)**, **memory** (session and longer-lived), **planning**, **reflection**, **specialized vs multi-agent** setups, and **operational concerns**—security around tools, **evaluation**, **latency and cost**, and **observability** when you deploy.
 
-**Using this folder as its own repository.** This directory is meant to work as the **root of a standalone Git repo**: chapters live here alongside [`code/`](./code/README.md) (runnable demos) and [`rag_federal_individual/`](./rag_federal_individual/README.md) (sample corpus pipeline). All in-repo links assume that layout.
+**How the repo is laid out.** Treat this directory as the **root of the Git repository** you clone. Everything is wired for that shape:
+
+| Part | What it is |
+|------|------------|
+| Root `*.md` | The 18 chapters + this README (read in order or jump by topic). |
+| [`code/`](./code/README.md) | Runnable **Python** demos aligned with the chapters (OpenAI + `.env`; setup in that README). |
+| [`rag_federal_individual/`](./rag_federal_individual/README.md) | Optional **sample RAG pipeline** (ingest → chunk → embed → query) used with Chapter 6. |
+
+Paths and links in the markdown assume you keep that layout. **Quick start:** skim the chapter list below, then open [`code/README.md`](./code/README.md) when you want to run something.
 
 ## Author and disclaimer
 
@@ -258,8 +266,6 @@ Deliverable:
 
 **Chapter (local SQLite vs cloud + runnable demo):** [Chapter 11 — Logging and traces](./11-logging-and-traces.md) · [`code/ch11_logging_traces_tax_agent.py`](./code/ch11_logging_traces_tax_agent.py)
 
-**Consolidated product-style demo (Ch 9–11 in one package):** see [Further reading outside this book](#further-reading-outside-this-book) (*tax_calculator_demo* in the parent monorepo, if you have it).
-
 ---
 
 # Phase 5 — Build specialized agents
@@ -283,8 +289,6 @@ Deliverable:
 * three focused agents with **clear boundaries** and **non-overlapping** tools (as much as practical)
 
 **Chapter + runnable:** [Chapter 12 — Specialized agents and narrow toolsets](./12-specialized-agents-narrow-tools.md) · [`code/ch12_specialized_agents_demo.py`](./code/ch12_specialized_agents_demo.py)
-
-**Product-scale role split (policy / household / RAG):** see [Further reading outside this book](#further-reading-outside-this-book) (*multi_agent_plan* in the parent monorepo, if you have it).
 
 ---
 
@@ -471,17 +475,5 @@ Skills learned:
 * trusting model output without validation
 * storing too much memory
 * building “general intelligence” instead of a narrow useful workflow
-
----
-
-## Further reading outside this book
-
-If you cloned **only** this repository, the paths below are not present; they refer to optional material in the larger **agent_infra** monorepo this book was extracted from.
-
-| Topic | Where (sibling of this folder when the monorepo is checked out) |
-|--------|------------------------------------------------------------------|
-| Original phased outline | `background/to_learn.md` |
-| Consolidated tax-style demo (Chapters 9–11) | `tax_calculator_demo/README.md` |
-| Product-scale multi-agent architecture | `multi_agent_plan/multi_agent_plan`, `multi_agent_plan/PRODUCT_STRUCTURE_AWS.md` |
 
 ---

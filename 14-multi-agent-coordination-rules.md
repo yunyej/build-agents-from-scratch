@@ -34,9 +34,9 @@ Uses the same **supervisor routing** as [Chapter 13](./13-multi-agent-split-role
 
 ---
 
-## 3. Relation to your product plan
+## 3. At production scale
 
-The optional *PRODUCT_STRUCTURE_AWS* note in the parent monorepo (see [Further reading outside this book](./README.md#further-reading-outside-this-book)) describes **coordination** at scale (queues, tenancy, traces). Chapter 14 is the **same ideas** in one process and one JSON blob.
+Real deployments usually add **queues**, **multi-tenant isolation**, **durable trace storage**, and **human handoff**—the same coordination ideas as this demo, spread across services and infrastructure. Chapter 14 keeps **one process** and **one shared state** object so the policy is easy to read.
 
 ---
 

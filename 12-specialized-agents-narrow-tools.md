@@ -2,9 +2,7 @@
 
 This chapter corresponds to **Step 12** under *Phase 5 — Build specialized agents* in [this book’s README](./README.md). Build **several small agents** instead of one universal assistant, and give **each agent only the tools it needs**.
 
-This matches how real products split work: different **roles**, different **tools**, different **failure modes** — easier to debug and safer than a single agent with twenty tools.
-
-For **product-scale** multi-role designs (research vs config vs simulation vs review), see [Further reading outside this book](./README.md#further-reading-outside-this-book) in this book’s README (*multi_agent_plan* in the parent monorepo, if you have it).
+This matches how real products split work: different **roles**, different **tools**, different **failure modes** — easier to debug and safer than a single agent with twenty tools. At larger scale, the same pattern often becomes separate pipelines (e.g. research vs configuration vs execution) with **strict tool permissions** per role.
 
 ---
 
@@ -59,7 +57,7 @@ python ch12_specialized_agents_demo.py document "Write a short report on deducti
 
 ## 4. Connection to multi-agent products
 
-The same idea appears at **product** scale in the optional *multi_agent_plan* material linked from [Further reading outside this book](./README.md#further-reading-outside-this-book): **Researcher** (RAG), **Builder** (configs), **Executor** (model run), etc., each with **tool permissions**. Chapter 12 is the **minimal code** version: three roles and explicit tool lists.
+Teams often mirror this with named roles—**researcher** (retrieval), **builder** (configs or artifacts), **executor** (runs or side effects)—each allowed only its own tools. Chapter 12 is the **minimal** version: three agents in one repo with explicit OpenAI `tools` lists.
 
 ---
 

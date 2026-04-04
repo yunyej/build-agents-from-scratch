@@ -38,7 +38,7 @@ Output sections: **Supervisor** (pick + plan), **Worker output**, **Critic**.
 
 ## 3. Product-scale analogy
 
-The same shape appears in the optional *multi_agent_plan* material (see [Further reading outside this book](./README.md#further-reading-outside-this-book)): a **planner** routes work; **researcher / builder / executor** are different roles with different tools. Chapter 13 is the **minimal** version in code.
+In bigger systems, a **planner** (or router) often chooses which specialist runs next; **research**, **build**, and **execute** steps are separate concerns with different tools and credentials. Chapter 13 is the **minimal** version of that shape in one script.
 
 ---
 

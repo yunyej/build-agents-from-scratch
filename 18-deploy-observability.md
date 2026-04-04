@@ -34,7 +34,7 @@ Stdout: model answer. Stderr: trace lines (redirect to a file or log agent in pr
 
 ## 3. What’s next
 
-You now have a full arc from single-tool agents through multi-agent coordination and production hygiene. When you build a client-facing service, optional companion material in the parent monorepo is listed under [Further reading outside this book](./README.md#further-reading-outside-this-book) (*tax_calculator_demo*, *PRODUCT_STRUCTURE_AWS*).
+You now have a full arc from single-tool agents through multi-agent coordination and production hygiene. Shipping a **client-facing** service usually adds authentication, SLOs and alerting, durable storage for traces and PII policies, and a real deployment and rollback story—build those on top of the patterns here.
 
 ---
 
