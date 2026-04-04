@@ -1,0 +1,6 @@
+{
+  "embed_model": "text-embedding-3-small",
+  "dimensions": 512,
+  "num_chunks": 2244,
+  "quick_mode": false
+}

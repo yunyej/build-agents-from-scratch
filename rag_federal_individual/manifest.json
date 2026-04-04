@@ -1,0 +1,66 @@
+{
+  "corpus_id": "federal_individual_v1",
+  "description": "Curated primary-ish sources for US federal individual income tax RAG. Verify URLs yearly; IRS updates publications.",
+  "notes": [
+    "Government materials: use per IRS/site terms. Do not ship this as legal or tax advice.",
+    "Run scripts from this book repo root: python rag_federal_individual/scripts/ingest.py"
+  ],
+  "sources": [
+    {
+      "id": "irs_p17",
+      "title": "IRS Publication 17 — Your Federal Income Tax (PDF)",
+      "url": "https://www.irs.gov/pub/irs-pdf/p17.pdf",
+      "format": "pdf",
+      "category": "irs_publication"
+    },
+    {
+      "id": "irs_p501",
+      "title": "IRS Publication 501 — Dependents, Standard Deduction, Filing Information (PDF)",
+      "url": "https://www.irs.gov/pub/irs-pdf/p501.pdf",
+      "format": "pdf",
+      "category": "irs_publication"
+    },
+    {
+      "id": "irs_p505",
+      "title": "IRS Publication 505 — Tax Withholding and Estimated Tax (PDF)",
+      "url": "https://www.irs.gov/pub/irs-pdf/p505.pdf",
+      "format": "pdf",
+      "category": "irs_publication"
+    },
+    {
+      "id": "irs_p970",
+      "title": "IRS Publication 970 — Education Credits (PDF)",
+      "url": "https://www.irs.gov/pub/irs-pdf/p970.pdf",
+      "format": "pdf",
+      "category": "irs_publication"
+    },
+    {
+      "id": "irs_p590b",
+      "title": "IRS Publication 590-B — Distributions from IRAs (PDF)",
+      "url": "https://www.irs.gov/pub/irs-pdf/p590b.pdf",
+      "format": "pdf",
+      "category": "irs_publication"
+    },
+    {
+      "id": "irs_filing_status",
+      "title": "IRS — Choose your filing status (HTML)",
+      "url": "https://www.irs.gov/filing/filing-status",
+      "format": "html",
+      "category": "irs_web"
+    },
+    {
+      "id": "irs_credits_deductions",
+      "title": "IRS — Credits & deductions for individuals (HTML)",
+      "url": "https://www.irs.gov/credits-deductions-for-individuals",
+      "format": "html",
+      "category": "irs_web"
+    },
+    {
+      "id": "irs_1040_instructions",
+      "title": "IRS Form 1040 Instructions (PDF)",
+      "url": "https://www.irs.gov/pub/irs-pdf/i1040gi.pdf",
+      "format": "pdf",
+      "category": "irs_form_instructions"
+    }
+  ]
+}
