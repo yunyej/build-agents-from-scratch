@@ -1,0 +1,13 @@
+# Gitleaks: extend defaults; allowlist scraped third-party HTML under data/raw/.
+# IRS pages embed Drupal JSON (e.g. theme_token) that matches generic-api-key — not secrets from this repo.
+
+title = "build-agents-from-scratch"
+
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Downloaded corpus snapshots (government / CMS embeds, not application secrets)"
+paths = [
+  '''rag_federal_individual/data/raw/''',
+]
