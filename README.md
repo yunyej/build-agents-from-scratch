@@ -9,6 +9,7 @@
 | Root `*.md` | The 18 chapters + this README (read in order or jump by topic). |
 | [`code/`](./code/README.md) | Runnable **Python** demos aligned with the chapters (OpenAI + `.env`; setup in that README). |
 | [`rag_federal_individual/`](./rag_federal_individual/README.md) | Optional **sample RAG pipeline** (ingest → chunk → embed → query) used with Chapter 6. |
+| [`tax_calculator_demo/`](./tax_calculator_demo/README.md) | Optional **single-agent “product shell”** (Chapters 9–11 in one package: facts → plan → tools → reflection → SQLite traces). Run as `python -m tax_calculator_demo` from the repo root. |
 
 Paths and links in the markdown assume you keep that layout. **Quick start:** skim the chapter list below, then open [`code/README.md`](./code/README.md) when you want to run something.
 
@@ -18,7 +19,7 @@ Paths and links in the markdown assume you keep that layout. **Quick start:** sk
 
 This project is **personal study notes** for learning how LLMs and agents work. It is shared **for education only**. The author **does not warrant** accuracy or completeness and **assumes no responsibility or liability** for errors, omissions, or any use you make of this material. Scenarios involving tax, law, or products are **illustrative**; rely on official sources and professional advice where stakes are high. **References** (vendor documentation, papers, and links) are cited in the chapters themselves and remain the authoritative sources for APIs, limits, and research claims.
 
-If you run the code locally, keep **API keys** in `code/.env` (or `rag_federal_individual/.env`) and **never commit** them.
+If you run the code locally, keep **API keys** in `code/.env` (or `rag_federal_individual/.env`, or `tax_calculator_demo/.env` if you use that demo’s local file) and **never commit** them.
 
 **License:** [Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)](./LICENSE). You may **view, share, and adapt** this work for **non-commercial** purposes with **attribution**. **Commercial use** (e.g. in a paid product or service, or primarily for commercial advantage) is **not** granted by this license; for that, contact the author. **Third-party** material (quoted text, linked government pages, vendor docs) stays under its **original** terms.
 

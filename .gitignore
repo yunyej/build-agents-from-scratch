@@ -61,3 +61,7 @@ Thumbs.db
 code/ch04_*.sqlite
 code/ch11_*.sqlite
 code/profiles/
+
+# tax_calculator_demo local trace DB
+tax_calculator_demo/data/*.sqlite
+tax_calculator_demo/data/*.sqlite-journal
